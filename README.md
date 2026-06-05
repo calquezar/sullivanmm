@@ -11,8 +11,6 @@ A Python package for computations related to Sullivan models, minimal models, AP
 
 Ensure SageMath is installed and its environment is active before installing `Sullivan_MM`.
 
-You can run `pip` through Sage's shell (e.g., `sage -pip install ...`) or activate Sage's environment manually depending on your installation.
-
 ### Install inside the Sage environment
 
 If you have Sage installed, and you want to make this package available for Sage, use the following command:
