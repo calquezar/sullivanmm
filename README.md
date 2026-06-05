@@ -20,7 +20,7 @@ If you have Sage installed, and you want to make this package available for Sage
 ```bash
 sage -pip install git+https://github.com/calquezar/sullivanmm.git
 ````
-# Examples
+# Example
 After the installation, you can check that it works inside your sage session, for example, computing, the minimal model of the wedge of two sphere:
 
 ```python
