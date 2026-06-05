@@ -28,6 +28,18 @@ sage: from Sullivan_MM import *
 sage: S2 = simplicial_sets.Sphere(2)
 sage: K = S2.wedge(S2)
 sage: W = APLK(K)
+sage: W.inject_variables()
+Getting generators of degree  0 ...
+Getting generators of degree  1 ...
+Getting generators of degree  2 ...
+Defining h0_0, h2_0, h2_1
+sage: h2_0.to_AplK()
+{sigma_2: 2*t2*y0*y1 - 2*t1*y0*y2 + 2*t0*y1*y2}
+sage: h2_0+h2_1
+[h2_0 + h2_1]
+sage: _.to_AplK()
+{sigma_2: 2*t2*y0*y1 - 2*t1*y0*y2 + 2*t0*y1*y2,
+ sigma_2: 2*t2*y0*y1 - 2*t1*y0*y2 + 2*t0*y1*y2}
 sage: M = W.minimal_model(i=3)
 sage: M.domain()
 Commutative Differential Graded Algebra with generators ('x2_0', 'x2_1', 'y3_0', 'y3_1', 'y3_2') in degrees (2, 2, 3, 3, 3) over Rational Field with differential:
@@ -36,6 +48,13 @@ Commutative Differential Graded Algebra with generators ('x2_0', 'x2_1', 'y3_0',
    y3_0 --> x2_0^2
    y3_1 --> x2_0*x2_1
    y3_2 --> x2_1^2
+sage: A = M.domain()
+sage: A.inject_variables()
+Defining x2_0, x2_1, y3_0, y3_1, y3_2
+sage: M.phi(x2_0)
+h2_0
+sage: M.phi(x2_0) in W
+True
 ````
 
 # Documentation
