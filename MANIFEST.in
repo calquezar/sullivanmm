@@ -1,0 +1,6 @@
+# Include the README file
+include README.md
+# Include setup.py or pyproject.toml (depending on which build system is used, pyproject.toml is included by default sometimes)
+include pyproject.toml
+# Include Python files within the Sullivan_MM package directory
+recursive-include Sullivan_MM *.py
