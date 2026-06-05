@@ -3,7 +3,7 @@ requires = ["setuptools>=61.0", "wheel"] # Requires setuptools for the setup.py 
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "Sullivan-Minimal-Models"
+name = "Sullivan_MM"
 version = "0.1.0"
 authors = [
     { name = "Carlos Alquézar", email = "alquezar@unizar.es" }, # Replace with your details
