@@ -13,7 +13,7 @@ Ensure SageMath is installed and its environment is active before installing `Su
 
 ### Install inside the Sage environment
 
-If you have Sage installed, and you want to make this package available for Sage, use the following command:
+If you have Sage installed, and you want to make this package available for it, use the following command:
 
 ```bash
 sage -pip install git+https://github.com/calquezar/sullivanmm.git
