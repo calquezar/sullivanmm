@@ -19,6 +19,6 @@ You can install the latest version directly from GitHub:
 
 ```bash
 pip install git+https://github.com/calquezar/sullivanmm.git
-
-## Documentation
+````
+# Documentation
 The documentation of the Sullvan Minimal Models packaque is available [here]([https://www.genome.gov/](https://riemann.unizar.es/~calquezar/sullivan/index.html)).
