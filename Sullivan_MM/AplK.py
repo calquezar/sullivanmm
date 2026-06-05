@@ -790,7 +790,7 @@ class APLK(Parent, UniqueRepresentation, CachedRepresentation):
         return {i: self._numerical_invariants[i]
                 for i in range(1, max_degree + 1)}
 
-    def minimal_model(self, i=3, max_iterations=3, partial_result=False, verbose=True, parallelComp=False):
+    def minimal_model(self, i=3, max_iterations=3, partial_result=False, verbose=False, parallelComp=False):
         r"""
 
         .. tab:: sage
