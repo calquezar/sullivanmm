@@ -38,6 +38,7 @@ sage: h2_0+h2_1
 sage: _.to_AplK()
 {sigma_2: 2*t2*y0*y1 - 2*t1*y0*y2 + 2*t0*y1*y2,
  sigma_2: 2*t2*y0*y1 - 2*t1*y0*y2 + 2*t0*y1*y2}
+sage: # internally, each sigma_2 corresponds with a different non-degenerated simplex
 sage: M = W.minimal_model(i=3)
 sage: M.domain()
 Commutative Differential Graded Algebra with generators ('x2_0', 'x2_1', 'y3_0', 'y3_1', 'y3_2') in degrees (2, 2, 3, 3, 3) over Rational Field with differential:
