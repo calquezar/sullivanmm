@@ -1,0 +1,52 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"] # Requires setuptools for the setup.py logic underneath or a backend like hatchling/build
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "Sullivan-Minimal-Models"
+version = "0.1.0"
+authors = [
+    { name = "Carlos Alquézar", email = "alquezar@unizar.es" }, # Replace with your details
+]
+description = "A package for Sullivan Minimal Models and APL/Hodge Theory on Simplicial Sets/Complexes."
+readme = "README.md"
+license = { text = "GPL-3.0-or-later" } 
+requires-python = ">=3.8" # Adjust based on compatibility
+# NOTE: SageMath is not listed here as it's typically installed separately.
+# dependencies = [] # No direct PyPI dependencies inferred
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Mathematics",
+    "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+]
+urls = {Homepage = "https://github.com/calquezar/sullivanmm"}
+
+[tool.setuptools.packages.find]
+# Look for packages inside the Sullivan_MM directory
+where = ["."]
+include = ["Sullivan_MM*"] # Find the Sullivan_MM package
+
+[tool.setuptools.package-data]
+Sullivan_MM = ["*.py"] # Include .py files within the package
+
+# If using tools like pytest, black, mypy, you would add their configurations here too.
+# [tool.pytest.ini_options]
+# testpaths = ["tests"]
+#
+# [tool.black]
+# line-length = 88
+# target-version = ['py38']
+#
+# [tool.mypy]
+# python_version = "3.8"
+# warn_return_any = true
+# warn_unused_configs = true
+# disallow_untyped_defs = true
