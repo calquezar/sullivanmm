@@ -20,6 +20,23 @@ If you have Sage installed, and you want to make this package available for Sage
 ```bash
 sage -pip install git+https://github.com/calquezar/sullivanmm.git
 ````
+# Examples
+After the installation, you can check that it works inside your sage session, for example, computing, the minimal model of the wedge of two sphere:
+
+```python
+sage: from Sullivan_MM import *
+sage: S2 = simplicial_sets.Sphere(2)
+sage: K = S2.wedge(S2)
+sage: W = APLK(K)
+sage: M = W.minimal_model(i=3)
+sage: M.domain()
+Commutative Differential Graded Algebra with generators ('x2_0', 'x2_1', 'y3_0', 'y3_1', 'y3_2') in degrees (2, 2, 3, 3, 3) over Rational Field with differential:
+   x2_0 --> 0
+   x2_1 --> 0
+   y3_0 --> x2_0^2
+   y3_1 --> x2_0*x2_1
+   y3_2 --> x2_1^2
+````
 
 # Documentation
-The documentation of the Sullvan Minimal Models packaque is available at https://riemann.unizar.es/~calquezar/sullivan/index.html.
+The complete documentation of the Sullvan Minimal Models package together with more examples is available at https://riemann.unizar.es/~calquezar/sullivan/index.html.
