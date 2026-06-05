@@ -19,7 +19,7 @@ If you have Sage installed, and you want to make this package available for it, 
 sage -pip install git+https://github.com/calquezar/sullivanmm.git
 ````
 # Example
-After the installation, you can check that it works inside your sage session, for example, computing, the minimal model of the wedge of two sphere:
+After the installation, you can check that it works inside your sage session, for example, computing, the minimal model of the wedge of two spheres:
 
 ```python
 sage: from Sullivan_MM import *
