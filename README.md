@@ -13,12 +13,13 @@ Ensure SageMath is installed and its environment is active before installing `Su
 
 You can run `pip` through Sage's shell (e.g., `sage -pip install ...`) or activate Sage's environment manually depending on your installation.
 
-### Install via pip
+### Install inside the Sage environment
 
-You can install the latest version directly from GitHub:
+If you have Sage installed, and you want to make this package available for Sage, use the following command:
 
 ```bash
-pip install git+https://github.com/calquezar/sullivanmm.git
+sage -pip install git+https://github.com/calquezar/sullivanmm.git
 ````
+
 # Documentation
 The documentation of the Sullvan Minimal Models packaque is available at https://riemann.unizar.es/~calquezar/sullivan/index.html.
