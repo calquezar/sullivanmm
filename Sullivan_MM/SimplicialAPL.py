@@ -235,7 +235,7 @@ class SimplicialAPL(UniqueRepresentation, CachedRepresentation):
         if not normalized:
             return hom(coef) * (1/factorial(dim_from))*w_form
         else:
-            c = Apl_to(1) #
+            c = Apl_to(1)
             if (coef in R and not coef in QQ):
                 c = Apl_to.zero()
                 for (i, m) in enumerate(coef.monomials()):
